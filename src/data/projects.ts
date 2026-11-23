@@ -1,0 +1,23 @@
+import { assets } from "@/data/assets";
+
+export const projects = [
+  {
+    id: "safezone", title: "SafeZone", subtitle: "GIS-based Disease Monitoring and Alert System", dates: "09/2025 – 07/2026", role: { en: "Team Leader · Scientific research project", vi: "Trưởng nhóm · Dự án nghiên cứu khoa học" },
+    description: { en: "A GIS-based disease monitoring platform with a Flutter app, Next.js admin portal, and centralized RESTful backend.", vi: "Nền tảng giám sát dịch bệnh dựa trên GIS, gồm ứng dụng Flutter, cổng quản trị Next.js và backend RESTful tập trung." },
+    highlights: { en: ["Designed and implemented RESTful APIs with NestJS, TypeScript, PostgreSQL, TypeORM, and PostGIS.", "Implemented JWT authentication, RBAC, input validation, and OTP verification.", "Built disease report review workflows and conversion of approved reports into official cases.", "Integrated Firebase Cloud Messaging for disease alerts, system notifications, and broadcasts.", "Implemented location monitoring and geofencing for disease risk zones.", "Designed and managed data for cases, reports, geographic areas, and disease zones."], vi: ["Thiết kế và triển khai RESTful API với NestJS, TypeScript, PostgreSQL, TypeORM và PostGIS.", "Triển khai JWT authentication, RBAC, xác thực dữ liệu đầu vào và xác thực OTP.", "Xây dựng quy trình duyệt báo cáo dịch bệnh và chuyển báo cáo đã duyệt thành ca bệnh chính thức.", "Tích hợp Firebase Cloud Messaging để gửi cảnh báo dịch, thông báo hệ thống và thông báo broadcast.", "Giám sát theo vị trí và triển khai geofencing cho vùng nguy cơ dịch bệnh.", "Thiết kế và quản lý dữ liệu ca bệnh, báo cáo, khu vực địa lý và vùng dịch."] },
+    tech: ["Node.js", "NestJS", "TypeScript", "PostgreSQL", "TypeORM", "PostGIS", "JWT", "Passport", "Firebase Admin SDK", "Jest", "Next.js", "Flutter"],
+    links: [{ label: "Backend", href: "https://github.com/miin000/SafeZone_BE" }, { label: "Admin Web", href: "https://github.com/miin000/SafeZone_Admin" }, { label: "Mobile", href: "https://github.com/miin000/SafeZone_Flutter" }], images: assets.projects.safezone, award: true
+  },
+  {
+    id: "minisocial", title: "MiniSocial", subtitle: "Social Networking System", dates: "12/2025 – 03/2026", // TODO: CV Business Analysis ghi thời gian kết thúc 02/2026.
+    role: { en: "Team Leader", vi: "Trưởng nhóm" }, description: { en: "A full-stack social platform for user interaction, groups, real-time messaging, and administration.", vi: "Nền tảng mạng xã hội full-stack hỗ trợ tương tác, cộng đồng/nhóm, nhắn tin thời gian thực và dashboard quản trị." },
+    highlights: { en: ["Built RESTful APIs with NestJS, MongoDB, and Mongoose, using JWT and RBAC.", "Integrated Firebase Authentication, Cloud Firestore, and Firebase Cloud Messaging.", "Developed backend features for users, posts, groups, and content moderation.", "Contributed unit, integration, and end-to-end tests; coordinated backend integration with web and mobile."], vi: ["Xây dựng RESTful API với NestJS, MongoDB và Mongoose, sử dụng JWT và RBAC.", "Tích hợp Firebase Authentication, Cloud Firestore và Firebase Cloud Messaging.", "Phát triển backend cho quản lý người dùng, bài viết, nhóm và kiểm duyệt nội dung.", "Tham gia viết unit, integration và end-to-end test; phối hợp tích hợp backend với web và mobile."] },
+    tech: ["Node.js", "NestJS", "TypeScript", "MongoDB", "Mongoose", "Firebase", "JWT", "Jest", "Next.js", "Flutter"], links: [], images: assets.projects.minisocial, todo: true
+  },
+  {
+    id: "minibank", title: "MiniBank", subtitle: "Simulated Banking System", dates: "04/2026 – 07/2026", role: { en: "Team Leader", vi: "Trưởng nhóm" },
+    description: { en: "A simulated banking system with a Flutter app, Java Spring Boot backend, and Next.js admin panel.", vi: "Hệ thống ngân hàng mô phỏng gồm ứng dụng Flutter, backend Java Spring Boot và trang quản trị Next.js." },
+    highlights: { en: ["Analyzed banking workflows and requirements for loans, contracts, and savings.", "Designed a layered architecture, decomposed tasks, coordinated integration across three layers, and tracked progress."], vi: ["Phân tích nghiệp vụ ngân hàng, xác định yêu cầu cho các luồng khoản vay, hợp đồng và tiết kiệm.", "Thiết kế kiến trúc phân lớp, chia nhỏ công việc, điều phối tích hợp ba lớp và theo dõi tiến độ."] },
+    tech: ["Next.js", "Java Spring Boot", "Flutter", "PostgreSQL", "Firebase"], links: [{ label: "Backend", href: "https://github.com/miin000/MiniBank-BE" }, { label: "Admin Web", href: "https://github.com/miin000/MiniBank-AdminWeb" }, { label: "Mobile", href: "https://github.com/miin000/MiniBank-Mobile" }], images: assets.projects.minibank
+  }
+] as const;
